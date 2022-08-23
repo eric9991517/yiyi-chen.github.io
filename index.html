@@ -16,6 +16,35 @@
     <title>Yiyi</title>
   </head>
   <body>
+
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', () => {
+
+      // Get all "navbar-burger" elements
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  // Check if there are any navbar burgers
+  if ($navbarBurgers.length > 0) {
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach( el => {
+      el.addEventListener('click', () => {
+
+        // Get the target from the "data-target" attribute
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+      });
+    });
+  }
+
+});
+   </script>
+
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a class="navbar-item" href="https://bulma.io">
@@ -31,7 +60,7 @@
           class="navbar-burger"
           aria-label="menu"
           aria-expanded="false"
-          data-target="navbarBasicExample"
+          data-target="navbar-menu"
         >
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -40,7 +69,7 @@
       </div>
 
       <!--Navbar導覽列-->
-      <div id="navbarBasicExample" class="navbar-menu">
+      <div id="navbar-menu" class="navbar-menu">
         <div class="container">
           <div class="navbar-start">
             
@@ -211,9 +240,11 @@
         <div class="container">
           <div class="tile is-ancestor">
             <div class="tile is-vertical is-12">
-              <div class="tile">
+              <div class="tile ">
                 <div class="tile is-parent is-vertical is-2">
                   <article class="tile is-child">
+                    <b class="has-text-dark is-size-4">緯創軟體</b>
+                    <br>
                     <b>Software Engineer</b>
                     <br>
                     <span class="tag is-info">Jan. 2021 ~ Present</span>
@@ -286,10 +317,12 @@
               <div class="tile">
                 <div class="tile is-parent is-vertical is-2">
                   <article class="tile is-child">
+                    <b class="has-text-dark is-size-4">成霖企業</b>
+                    <br>
                     <b>Software Engineer</b>
                     <br>
                     <span class="tag is-info">May 2018 ~ May 2022</span>
-                  </article>
+                  </article>  
   
                 </div>
                 <div class="tile is-parent is-8">
@@ -324,6 +357,8 @@
                 <div class="tile">
                   <div class="tile is-parent is-vertical is-2">
                     <article class="tile is-child">
+                      <b class="has-text-dark is-size-4">八旺實業</b>
+                      <br>
                       <b>Technical Support Engineer</b>
                       <br>
                       <span class="tag is-info">Jun 2015 ~ Mar 2018</span>
@@ -363,6 +398,8 @@
                     <div class="tile">
                       <div class="tile is-parent is-vertical is-2">
                         <article class="tile is-child">
+                          <b class="has-text-dark is-size-4">寶成集團</b>
+                          <br>
                           <b>Software Engineer</b>
                           <br>
                           <span class="tag is-info">Jan 2015 ~ May 2015</span>
