@@ -1,233 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-  <html class="fontawesome-i2svg-active fontawesome-i2svg-complete">
-    <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/147a538173.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"/>
-    <title>Yiyi</title>
-  </head>
-  <body>
+<html class="fontawesome-i2svg-active fontawesome-i2svg-complete">
 
-   
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/147a538173.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+  <title>Yiyi</title>
+</head>
 
-    <script type="text/javascript">
-      document.addEventListener('DOMContentLoaded', () => {
+<body>
+
+
+
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', () => {
 
       // Get all "navbar-burger" elements
-  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
-  // Check if there are any navbar burgers
-  if ($navbarBurgers.length > 0) {
+      // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
 
-    // Add a click event on each of them
-    $navbarBurgers.forEach( el => {
-      el.addEventListener('click', () => {
+        // Add a click event on each of them
+        $navbarBurgers.forEach(el => {
+          el.addEventListener('click', () => {
 
-        // Get the target from the "data-target" attribute
-        const target = el.dataset.target;
-        const $target = document.getElementById(target);
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
 
-        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-        el.classList.toggle('is-active');
-        $target.classList.toggle('is-active');
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
 
-      });
+          });
+        });
+      }
+
     });
-  }
+  </script>
 
-});
-   </script>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://bulma.io">
+        <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" />
+      </a>
 
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="https://bulma.io">
-          <img
-            src="https://bulma.io/images/bulma-logo.png"
-            width="112"
-            height="28"
-          />
-        </a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
 
-        <a
-          role="button"
-          class="navbar-burger"
-          aria-label="menu"
-          aria-expanded="false"
-          data-target="navbar-menu"
-        >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
+    <!--Navbar導覽列-->
+    <div id="navbar-menu" class="navbar-menu">
+      <div class="container">
+        <div class="navbar-start">
 
-      <!--Navbar導覽列-->
-      <div id="navbar-menu" class="navbar-menu">
-        <div class="container">
-          <div class="navbar-start">
-            
-            
-            <a class="navbar-item" href="https://eric9991517.github.io/yiyi-chen.github.io/index.html#about">
-              About
-            </a>
-      
-           
-      
-            <a class="navbar-item" href="https://eric9991517.github.io/yiyi-chen.github.io/index.html#exp">
-              Work Experience
-            </a>
 
-            <a class="navbar-item" href="https://eric9991517.github.io/yiyi-chen.github.io/index.html#education">
-              Education
-            </a> 
+          <a class="navbar-item" href="https://eric9991517.github.io/yiyi-chen.github.io/index.html#about">
+            About
+          </a>
 
-          </div>
+
+
+          <a class="navbar-item" href="https://eric9991517.github.io/yiyi-chen.github.io/index.html#exp">
+            Work Experience
+          </a>
+
+          <a class="navbar-item" href="https://eric9991517.github.io/yiyi-chen.github.io/index.html#education">
+            Education
+          </a>
+
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <!-- 主頁資訊 測試遠端-->
-    <section class="section" id="about">
-      <div class="container">
-        <div class="tile is-ancestor">
-          <div class="tile is-vertical is-12">
-            <div class="tile">
-              <div class="tile is-parent is-vertical">
-                <article class="tile is-child">
-                  <figure class="media-left">
-                    <img
-                      class="is-rounded"
-                      style="width: 320px; height: 320px; border-radius: 100%"
-                      src="https://github.com/eric9991517/yiyi-chen.github.io/blob/gh-pages/image/profile.JPG?raw=true"
-                    />
-                  </figure>
-                </article>
-              </div>
+  <!-- 主頁資訊 測試遠端-->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="tile is-ancestor">
+        <div class="tile is-vertical is-12">
+          <div class="tile">
+            <div class="tile is-parent is-vertical">
+              <article class="tile is-child">
+                <figure class="media-left">
+                  <img class="is-rounded" style="width: 320px; height: 320px; border-radius: 100%"
+                    src="https://github.com/eric9991517/yiyi-chen.github.io/blob/gh-pages/image/profile.JPG?raw=true" />
+                </figure>
+              </article>
+            </div>
 
-              <div class="tile is-parent">
-                <article class="tile is-child">
-                  <h1 class="title">陳羿翊｜Yiyi Chen</h1>
-                  <h2 style="display: flex; align-items: center">
-                    <span style="margin-right: 8px"
-                      >後端工程師 Backend Engineer</span
-                    >
-                    <span>
-                      <!--contact info-->
-                      <a href="mailto:eric9991517@gmail.com">
-                        <span>
-                          <i class="fa-solid fa-envelope fa-xl"></i>
-                        </span>
-                      </a>
-                      <!--github link-->
-                      <a href="https://github.com/eric9991517">
-                        <span>
-                          <i class="fa-brands fa-github fa-xl"></i>  
-                        </span>
-                      </a>
-                      <!--Linkedin link-->
-                      <a href="https://www.linkedin.com/in/yiyi-chen-261aa1248/">
-                        <span>
-                          <i class="fa-brands fa-linkedin fa-xl"></i>
-                        </span>
-                      </a>
-                    </span>
-                  </h2>
-                  <p class="subtitle"></p>
+            <div class="tile is-parent">
+              <article class="tile is-child">
+                <h1 class="title">陳羿翊｜Yiyi Chen</h1>
+                <h2 style="display: flex; align-items: center">
+                  <span style="margin-right: 8px">後端工程師 Backend Engineer</span>
+                  <span>
+                    <!--contact info-->
+                    <a href="mailto:eric9991517@gmail.com">
+                      <span>
+                        <i class="fa-solid fa-envelope fa-xl"></i>
+                      </span>
+                    </a>
+                    <!--github link-->
+                    <a href="https://github.com/eric9991517">
+                      <span>
+                        <i class="fa-brands fa-github fa-xl"></i>
+                      </span>
+                    </a>
+                    <!--Linkedin link-->
+                    <a href="https://www.linkedin.com/in/yiyi-chen-261aa1248/">
+                      <span>
+                        <i class="fa-brands fa-linkedin fa-xl"></i>
+                      </span>
+                    </a>
+                  </span>
+                </h2>
+                <p class="subtitle"></p>
 
-                  <p class="subtitle">
-                    <span class="icon has-text-danger">
-                      <svg
-                        class="svg-inline--fa fa-map-marker-alt fa-w-12"
-                        aria-hidden="true"
-                        data-prefix="fas"
-                        data-icon="map-marker-alt"
-                        role="img"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 384 512"
-                        data-fa-i2svg=""
-                        width="22px"
-                        height="22px"
-                      >
-                        <path
-                          fill="currentColor"
-                          d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"
-                        ></path></svg
-                      ><!-- <i class="fas fa-map-marker-alt"></i> -->
-                    </span>
-                    Taipei , TW
-                  </p>
+                <p class="subtitle">
+                  <span class="icon has-text-danger">
+                    <svg class="svg-inline--fa fa-map-marker-alt fa-w-12" aria-hidden="true" data-prefix="fas"
+                      data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"
+                      data-fa-i2svg="" width="22px" height="22px">
+                      <path fill="currentColor"
+                        d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z">
+                      </path>
+                    </svg><!-- <i class="fas fa-map-marker-alt"></i> -->
+                  </span>
+                  Taipei , TW
+                </p>
 
-                  <p>
-                    擁有6年後端經驗，喜歡在工作過程中自學程式研究新穎技術。目前在 <strong>  緯創軟體 </strong> 擔任後端工程師，期許自己持續精進技術實力，並結合過往經驗，協助公司解決問題。
-                    <br>
-                    Here is my
-                    <a
-                      style="color: #3298dc"
-                      href="https://eric9991517.github.io/yiyi-chen.github.io/"
-                      ><span class="tag is-info is-light">CV</span></a
-                    >
-                  </p>
-                </article>
-              </div>
+                <p>
+                  擁有6年後端經驗，喜歡在工作過程中自學程式研究新穎技術。目前在 <strong> 緯創軟體 </strong> 擔任後端工程師，期許自己持續精進技術實力，並結合過往經驗，協助公司解決問題。
+                  <br>
+                  Here is my
+                  <a style="color: #3298dc" href="https://eric9991517.github.io/yiyi-chen.github.io/"><span
+                      class="tag is-info is-light">CV</span></a>
+                </p>
+              </article>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section" id="exp">
+  <section class="section" id="exp">
+    <div class="container">
+      <h3 id="sizes" class="title is-4 is-spaced bd-anchor-title">
+        <span class="bd-anchor-name">
+          工作經歷
+          <a href="https://eric9991517.github.io/yiyi-chen.github.io/index.html#work_experience">
+            <span>
+              <i class="fa-solid fa-briefcase"></i>
+            </span>
+          </a>
+        </span>
+
+      </h3>
+      <hr class="hr" style="margin-bottom:0;">
+      <br>
+
       <div class="container">
-        <h3 id="sizes" class="title is-4 is-spaced bd-anchor-title">
-          <span class="bd-anchor-name">
-            工作經歷
-            <a href="https://eric9991517.github.io/yiyi-chen.github.io/index.html#work_experience">
-              <span>
-                <i class="fa-solid fa-briefcase"></i>
-              </span>
-            </a>
-          </span>
-          
-        </h3>
-        <hr class="hr" style="margin-bottom:0;">
-        <br>
-  
-        <div class="container">
-          <div class="tile is-ancestor">
-            <div class="tile is-vertical is-12">
-              <div class="tile ">
-                <div class="tile is-parent is-vertical is-2">
-                  <article class="tile is-child">
-                    <b class="has-text-dark is-size-4">緯創軟體</b>
-                    <br>
-                    <b>Software Engineer</b>
-                    <br>
-                    <span class="tag is-info">Jan. 2021 ~ Present</span>
-                  </article>
-  
-                </div>
-                <div class="tile is-parent is-8">
-                  <article class="tile is-child">
-                    <p>協助客戶開發維護新產品</p>  
-                    <p>報表維護新開發</p><br>
+        <div class="tile is-ancestor">
+          <div class="tile is-vertical is-12">
+            <div class="tile ">
+              <div class="tile is-parent is-vertical is-2">
+                <article class="tile is-child">
+                  <b class="has-text-dark is-size-4">緯創軟體</b>
+                  <br>
+                  <b>Software Engineer</b>
+                  <br>
+                  <span class="tag is-info">Jan. 2021 ~ Present</span>
+                </article>
+
+              </div>
+              <div class="tile is-parent is-8">
+                <article class="tile is-child">
+                  <p>協助客戶開發維護新產品</p>
+                  <p>報表維護新開發</p><br>
+
+                  <div class="field is-grouped is-grouped-multiline">
+                    <div class="control">
+                      <div class="tags has-addons">
+                        <span class="tag is-link">Oracle</span>
+                        <span class="tag is-delete"></span>
+                      </div>
+                    </div>
 
                     <div class="field is-grouped is-grouped-multiline">
                       <div class="control">
                         <div class="tags has-addons">
-                          <span class="tag is-link">Oracle</span>
+                          <span class="tag is-link">DB2</span>
                           <span class="tag is-delete"></span>
                         </div>
                       </div>
-
-                      <div class="field is-grouped is-grouped-multiline">
-                        <div class="control">
-                          <div class="tags has-addons">
-                            <span class="tag is-link">DB2</span>
-                            <span class="tag is-delete"></span>
-                          </div>
-                        </div>
 
                       <div class="control">
                         <div class="tags has-addons">
@@ -259,31 +233,31 @@
 
                     </div>
                   </div>
-                  </article>
-                 
-  
+                </article>
+
+
                 <div class="tile is-parent is-2">
                   <article class="tile is-child">
                     <figure class="media-right">
                       <p class="image is-128x128">
                         <a href="https://www.wistronits.com/tw/" target="_blank">
-                        <img src="./image/wist.svg">
+                          <img src="./image/wist.svg">
                         </a>
                       </p>
                     </figure>
-  
+
                   </article>
                 </div>
-  
+
               </div>
-  
+
             </div>
-            </div>
-            </div>
-  
-  
-  
-          <div class="container">
+          </div>
+        </div>
+
+
+
+        <div class="container">
           <div class="tile is-ancestor">
             <div class="tile is-vertical is-12">
               <div class="tile">
@@ -294,8 +268,8 @@
                     <b>Software Engineer</b>
                     <br>
                     <span class="tag is-info">May 2018 ~ May 2022</span>
-                  </article>  
-  
+                  </article>
+
                 </div>
                 <div class="tile is-parent is-8">
                   <article class="tile is-child">
@@ -341,214 +315,214 @@
                     </div>
                   </article>
                 </div>
-  
+
                 <div class="tile is-parent is-2">
                   <article class="tile is-child">
                     <figure class="media-right">
                       <p class="image is-128x128">
                         <a href="https://tw.globeunion.com/" target="_blank">
-                        <img src="./image/gu.png">
+                          <img src="./image/gu.png">
                         </a>
                       </p>
                     </figure>
-  
+
                   </article>
                 </div>
-  
+
               </div>
-  
+
             </div>
-            </div>
-            </div>
-  
-            <div class="container">
-            <div class="tile is-ancestor">
-              <div class="tile is-vertical is-12">
-                <div class="tile">
-                  <div class="tile is-parent is-vertical is-2">
-                    <article class="tile is-child">
-                      <b class="has-text-dark is-size-4">八旺實業</b>
-                      <br>
-                      <b>Technical Support Engineer</b>
-                      <br>
-                      <span class="tag is-info">Jun 2015 ~ Mar 2018</span>
-                    </article>
-  
-                  </div>
-                  <div class="tile is-parent is-8">
-                    <article class="tile is-child">
-                      <p>標籤機及Barcode相關周邊產品維修</p>
-                      <p>客製PDA進出庫掃瞄程式</p>
-                      <p>客製標籤機列印程式</p><br>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="tile is-ancestor">
+            <div class="tile is-vertical is-12">
+              <div class="tile">
+                <div class="tile is-parent is-vertical is-2">
+                  <article class="tile is-child">
+                    <b class="has-text-dark is-size-4">八旺實業</b>
+                    <br>
+                    <b>Technical Support Engineer</b>
+                    <br>
+                    <span class="tag is-info">Jun 2015 ~ Mar 2018</span>
+                  </article>
+
+                </div>
+                <div class="tile is-parent is-8">
+                  <article class="tile is-child">
+                    <p>標籤機及Barcode相關周邊產品維修</p>
+                    <p>客製PDA進出庫掃瞄程式</p>
+                    <p>客製標籤機列印程式</p><br>
+                    <div class="field is-grouped is-grouped-multiline">
+                      <div class="control">
+                        <div class="tags has-addons">
+                          <span class="tag is-link">MySQL</span>
+                          <span class="tag is-delete"></span>
+                        </div>
+                      </div>
+
                       <div class="field is-grouped is-grouped-multiline">
                         <div class="control">
                           <div class="tags has-addons">
-                            <span class="tag is-link">MySQL</span>
+                            <span class="tag is-link">VB6</span>
                             <span class="tag is-delete"></span>
                           </div>
                         </div>
-  
-                        <div class="field is-grouped is-grouped-multiline">
-                          <div class="control">
-                            <div class="tags has-addons">
-                              <span class="tag is-link">VB6</span>
-                              <span class="tag is-delete"></span>
-                            </div>
-                          </div>
-  
+
                         <div class="control">
                           <div class="tags has-addons">
                             <span class="tag is-link">VB.NET</span>
                             <span class="tag is-delete"></span>
                           </div>
                         </div>
-  
+
                         <div class="control">
                           <div class="tags has-addons">
                             <span class="tag is-link">C</span>
                             <span class="tag is-delete"></span>
                           </div>
                         </div>
-  
+
                         <div class="control">
                           <div class="tags has-addons">
                             <span class="tag is-link">Bartender</span>
                             <span class="tag is-delete"></span>
                           </div>
                         </div>
-                    </article>
-                  </div>
-  
-                  <div class="tile is-parent is-2">
-                    <article class="tile is-child">
-                      <figure class="media-right">
-                        <p class="image is-128x128">
-                          <a href="https://www.barwand.com.tw/?" target="_blank">
-                          <img src="./image/bw.png">
-                          </a>
-                        </p>
-                      </figure>
-  
-                    </article>
-                  </div>
-  
+                  </article>
                 </div>
-  
-              </div>
-              </div>
+
+                <div class="tile is-parent is-2">
+                  <article class="tile is-child">
+                    <figure class="media-right">
+                      <p class="image is-128x128">
+                        <a href="https://www.barwand.com.tw/?" target="_blank">
+                          <img src="./image/bw.png">
+                        </a>
+                      </p>
+                    </figure>
+
+                  </article>
+                </div>
+
               </div>
 
-              <div class="container">
-                <div class="tile is-ancestor">
-                  <div class="tile is-vertical is-12">
-                    <div class="tile">
-                      <div class="tile is-parent is-vertical is-2">
-                        <article class="tile is-child">
-                          <b class="has-text-dark is-size-4">寶成集團</b>
-                          <br>
-                          <b>Software Engineer</b>
-                          <br>
-                          <span class="tag is-info">Jan 2015 ~ May 2015</span>
-                        </article>
-      
-                      </div>
-                      <div class="tile is-parent is-8">
-                        <article class="tile is-child">
-                          <p>標籤機及Barcode相關周邊產品維修</p><br>
-                            <div class="field is-grouped is-grouped-multiline">
-                              <div class="control">
-                                <div class="tags has-addons">
-                                  <span class="tag is-link">VB6</span>
-                                  <span class="tag is-delete"></span>
-                                </div>
-                              </div>
-      
-                            <div class="control">
-                              <div class="tags has-addons">
-                                <span class="tag is-link">VB.NET</span>
-                                <span class="tag is-delete"></span>
-                              </div>
-                            </div>
-      
-                            <div class="control">
-                              <div class="tags has-addons">
-                                <span class="tag is-link">powerSHAPE</span>
-                                <span class="tag is-delete"></span>
-                              </div>
-                            </div>
-                        </article>
-                      </div>
-      
-                      <div class="tile is-parent is-2">
-                        <article class="tile is-child">
-                          <figure class="media-right">
-                            <p class="image is-64x64">
-                              <a href="https://www.pouchen.com/index.php/tw/" target="_blank">
-                              <img class="is-rounded" src="./image/Pou.png">
-                              </a>
-                            </p>
-                          </figure>
-      
-                        </article>
-                      </div>
-      
-                    </div>
-      
-                  </div>
-                  </div>
-                  </div>
-  
-              
-      </div>
-    </section>
-
-    <!--Education-->
-    <section class="section" id="education">
-      <div class="container">
-        <h3 id="sizes" class="title is-4 is-spaced bd-anchor-title">
-          <span class="bd-anchor-name">
-            求學經歷
-            <a href="https://eric9991517.github.io/yiyi-chen.github.io/index.html#education">
-              <span>
-                <i class="fa-solid fa-graduation-cap"></i>  
-              </span>
-            </a>
-          </span>
-          
-        </h3>
-        <hr class="hr" style="margin-bottom:0;">
-        <br>
-      
-      
-        <article class="media">
-  
-          <div class="media-content">
-            <div class="content">
-              <p>
-                <b class="has-text-dark is-size-4">Asia University</b>
-                <br>
-                  Computer Science and Information Engineering
-                <br>
-                Taichung, Taiwan | 2009 - 2014
-              </p>
             </div>
           </div>
-          <div class="tile is-parent is-2">
-            <article class="tile is-child">
-              <figure class="media-right">
-                <p class="image is-128x128">
-                  <a href="https://www.asia.edu.tw/"  target="_blank">
-                    <img src="./image/asia_logo.png">
-                  </a>
-                </p>
-              </figure>
-            </article>
+        </div>
+
+        <div class="container">
+          <div class="tile is-ancestor">
+            <div class="tile is-vertical is-12">
+              <div class="tile">
+                <div class="tile is-parent is-vertical is-2">
+                  <article class="tile is-child">
+                    <b class="has-text-dark is-size-4">寶成集團</b>
+                    <br>
+                    <b>Software Engineer</b>
+                    <br>
+                    <span class="tag is-info">Jan 2015 ~ May 2015</span>
+                  </article>
+
+                </div>
+                <div class="tile is-parent is-8">
+                  <article class="tile is-child">
+                    <p>標籤機及Barcode相關周邊產品維修</p><br>
+                    <div class="field is-grouped is-grouped-multiline">
+                      <div class="control">
+                        <div class="tags has-addons">
+                          <span class="tag is-link">VB6</span>
+                          <span class="tag is-delete"></span>
+                        </div>
+                      </div>
+
+                      <div class="control">
+                        <div class="tags has-addons">
+                          <span class="tag is-link">VB.NET</span>
+                          <span class="tag is-delete"></span>
+                        </div>
+                      </div>
+
+                      <div class="control">
+                        <div class="tags has-addons">
+                          <span class="tag is-link">powerSHAPE</span>
+                          <span class="tag is-delete"></span>
+                        </div>
+                      </div>
+                  </article>
+                </div>
+
+                <div class="tile is-parent is-2">
+                  <article class="tile is-child">
+                    <figure class="media-right">
+                      <p class="image is-64x64">
+                        <a href="https://www.pouchen.com/index.php/tw/" target="_blank">
+                          <img class="is-rounded" src="./image/Pou.png">
+                        </a>
+                      </p>
+                    </figure>
+
+                  </article>
+                </div>
+
+              </div>
+
+            </div>
           </div>
-        </article>
+        </div>
+
+
       </div>
-    </section>
+  </section>
 
-    <div style="margin-top: 500px"></div>
-  </body>
+  <!--Education-->
+  <section class="section" id="education">
+    <div class="container">
+      <h3 id="sizes" class="title is-4 is-spaced bd-anchor-title">
+        <span class="bd-anchor-name">
+          求學經歷
+          <a href="https://eric9991517.github.io/yiyi-chen.github.io/index.html#education">
+            <span>
+              <i class="fa-solid fa-graduation-cap"></i>
+            </span>
+          </a>
+        </span>
+
+      </h3>
+      <hr class="hr" style="margin-bottom:0;">
+      <br>
+
+
+      <article class="media">
+
+        <div class="media-content">
+          <div class="content">
+            <p>
+              <b class="has-text-dark is-size-4">Asia University</b>
+              <br>
+              Computer Science and Information Engineering
+              <br>
+              Taichung, Taiwan | 2009 - 2014
+            </p>
+          </div>
+        </div>
+        <div class="tile is-parent is-2">
+          <article class="tile is-child">
+            <figure class="media-right">
+              <p class="image is-128x128">
+                <a href="https://www.asia.edu.tw/" target="_blank">
+                  <img src="./image/asia_logo.png">
+                </a>
+              </p>
+            </figure>
+          </article>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <div style="margin-top: 500px"></div>
+</body>
+
 </html>
-
